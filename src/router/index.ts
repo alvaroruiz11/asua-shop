@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
-
+import HomePage from '../presentation/pages/home/HomePage.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: HomeView
-    // },
+    {
+      path: '',
+      component: () => import('../presentation/layouts/ShopLayout.vue'),
+      children: [{ path: '', component: HomePage, name: 'Home' }]
+    }
     // {
     //   path: '/about',
     //   name: 'about',
