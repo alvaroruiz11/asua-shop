@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProductCard from '@/presentation/components/products/ProductCard.vue';
+import ProductsSlide from '@/presentation/components/products/ProductsSlide.vue';
 </script>
 
 <template>
@@ -31,7 +31,7 @@ import ProductCard from '@/presentation/components/products/ProductCard.vue';
     <div class="flex flex-col justify-start gap-7 w-3/4 md:mt-32">
       <h1 class="text-4xl font-semibold">SOBRE NOSOTROS</h1>
       <p class="text-xl">
-        Explora el origen de la empresa para descubrir su misión, visión y valores fundamentales...
+        Explora el origen de ASUA para descubrir su misión, visión y valores fundamentales...
       </p>
       <button
         class="w-2/3 text-gray-700 border-2 border-gray-300 rounded-sm text-lg font-medium p-2 hover:bg-gray-500 hover:text-white hover:border-gray-500 transition-all duration-300"
@@ -54,13 +54,7 @@ import ProductCard from '@/presentation/components/products/ProductCard.vue';
       <h1 class="text-center text-4xl font-semibold">NUESTROS PRODUCTOS</h1>
       <p class="text-center text-xl mt-5">Los productos para el cuidado de la piel</p>
 
-      <div class="grid grid-cols-3">
-        <!-- ProductsSlide -->
-        <!-- ProductCard -->
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-      </div>
+      <ProductsSlide />
     </section>
   </div>
 </template>
