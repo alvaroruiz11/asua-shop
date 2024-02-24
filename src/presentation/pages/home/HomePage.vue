@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ProductsSlide from '@/presentation/components/products/ProductsSlide.vue';
+import { initialState } from '../../seed/seed';
 </script>
 
 <template>
@@ -29,12 +30,12 @@ import ProductsSlide from '@/presentation/components/products/ProductsSlide.vue'
   <!-- section about -->
   <section class="grid grid-cols-2 max-w-[1400px] mx-auto p-6 md:p-12 lg:p-16">
     <div class="flex flex-col justify-start gap-7 w-3/4 md:mt-32">
-      <h1 class="text-4xl font-semibold">SOBRE NOSOTROS</h1>
+      <h1>SOBRE NOSOTROS</h1>
       <p class="text-xl">
         Explora el origen de ASUA para descubrir su misión, visión y valores fundamentales...
       </p>
       <button
-        class="w-2/3 text-gray-700 border-2 border-gray-300 rounded-sm text-lg font-medium p-2 hover:bg-gray-500 hover:text-white hover:border-gray-500 transition-all duration-300"
+        class="w-2/3 text-tussock-700 border border-tussock-700 rounded-sm text-lg font-medium p-2 hover:bg-tussock-600 hover:text-white hover:border-tussock-500 transition-all duration-300"
       >
         VER MAS
       </button>
@@ -49,22 +50,21 @@ import ProductsSlide from '@/presentation/components/products/ProductsSlide.vue'
     </div>
   </section>
 
-  <div class="max-w-[100vw] bg-gray-600 p-6 md:p-12 lg:p-16" style="background-color: #ebebeb">
+  <div class="max-w-[100vw] bg-gray-600 p-6 md:p-12 lg:p-16" style="background-color: #fdfcf8">
     <section class="max-w-[1400px] mx-auto">
-      <h1 class="text-center text-4xl font-semibold">NUESTROS PRODUCTOS</h1>
+      <h1 class="text-center">NUESTROS PRODUCTOS</h1>
       <p class="text-center text-xl mt-5">Los productos para el cuidado de la piel</p>
 
-      <ProductsSlide />
+      <ProductsSlide :products="initialState.products" />
     </section>
   </div>
 </template>
 
 <style scoped>
 h1 {
-  color: #4b4b4b;
+  @apply text-tussock-800 font-bold text-4xl;
 }
-
 p {
-  color: #4b4b4b;
+  @apply text-tussock-800;
 }
 </style>

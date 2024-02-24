@@ -7,6 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import ProductCard from '@/presentation/components/products/ProductCard.vue';
+import type { SeedProduct } from '../../seed/seed';
+
+interface Props {
+  products: SeedProduct[];
+}
+defineProps<Props>();
 </script>
 <template>
   <Swiper
@@ -17,17 +23,8 @@ import ProductCard from '@/presentation/components/products/ProductCard.vue';
     navigation
     :pagination="{ clickable: true }"
   >
-    <SwiperSlide>
-      <ProductCard />
-    </SwiperSlide>
-    <SwiperSlide>
-      <ProductCard />
-    </SwiperSlide>
-    <SwiperSlide>
-      <ProductCard />
-    </SwiperSlide>
-    <SwiperSlide>
-      <ProductCard />
+    <SwiperSlide v-for="product in products" :key="product.slug">
+      <ProductCard :product="product" />
     </SwiperSlide>
   </Swiper>
 </template>
@@ -50,7 +47,7 @@ import ProductCard from '@/presentation/components/products/ProductCard.vue';
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #374151;
+  background-color: #815027;
 }
 
 .swiper-button-prev,
