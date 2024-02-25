@@ -28,10 +28,12 @@ import { initialState } from '../../seed/seed';
   </div>
 
   <!-- section about -->
-  <section class="grid grid-cols-2 max-w-[1400px] mx-auto p-6 md:p-12 lg:p-16">
-    <div class="flex flex-col justify-start gap-7 w-3/4 md:mt-32">
+  <section class="grid grid-cols-1 md:grid-cols-2 max-w-[1400px] mx-auto p-6 md:p-12 lg:p-16">
+    <div
+      class="flex flex-col items-center text-center md:justify-start gap-7 w-full md:w-3/4 md:mt-32"
+    >
       <h1>SOBRE NOSOTROS</h1>
-      <p class="text-xl">
+      <p class="text-base md:text-xl">
         Explora el origen de ASUA para descubrir su misión, visión y valores fundamentales...
       </p>
       <button
@@ -41,7 +43,7 @@ import { initialState } from '../../seed/seed';
       </button>
     </div>
     <div
-      class="relative shadow-inner shadow-black/10 rounded-lg bg-red-100 overflow-hidden group h-[610px]"
+      class="relative shadow-inner shadow-black/10 rounded-lg bg-red-100 overflow-hidden group h-[450px] md:h-[610px] mt-5 md:mt-0"
     >
       <div
         style="background-image: url('/assets/about-2.webp')"
@@ -53,7 +55,9 @@ import { initialState } from '../../seed/seed';
   <div class="max-w-[100vw] bg-gray-600 p-6 md:p-12 lg:p-16" style="background-color: #fdfcf8">
     <section class="max-w-[1400px] mx-auto">
       <h1 class="text-center">NUESTROS PRODUCTOS</h1>
-      <p class="text-center text-xl mt-5">Los productos para el cuidado de la piel</p>
+      <p class="text-center text-xl mt-3">
+        Los auténticos productos del cuidado de la piel de lujo
+      </p>
 
       <ProductsSlide :products="initialState.products" />
     </section>
@@ -62,7 +66,7 @@ import { initialState } from '../../seed/seed';
 
 <style scoped>
 h1 {
-  @apply text-tussock-800 font-bold text-4xl;
+  @apply text-tussock-800 font-bold md:text-4xl text-3xl;
 }
 p {
   @apply text-tussock-800;

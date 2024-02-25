@@ -16,12 +16,21 @@ defineProps<Props>();
 </script>
 <template>
   <Swiper
-    :slides-per-view="3"
-    :space-between="10"
-    class="mySwiper"
+    :slides-per-view="1"
     :modules="[Navigation, Pagination]"
     navigation
     :pagination="{ clickable: true }"
+    class="mySwiper"
+    :breakpoints="{
+      '768': {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      '1024': {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }"
   >
     <SwiperSlide v-for="product in products" :key="product.slug">
       <ProductCard :product="product" />
