@@ -6,7 +6,14 @@ const router = createRouter({
     {
       path: '',
       component: () => import('../presentation/layouts/ShopLayout.vue'),
-      children: [{ path: '', component: HomePage, name: 'Home' }]
+      children: [
+        { path: '', component: HomePage, name: 'Home' },
+        {
+          path: 'nosotros',
+          component: () => import('../presentation/pages/about/AboutPage.vue'),
+          name: 'about'
+        }
+      ]
     }
     // {
     //   path: '/about',

@@ -1,30 +1,36 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
 import { useUiStore } from '../../stores/ui-store';
+import LogoComponent from '../shared/LogoComponent.vue';
 const store = useUiStore();
 </script>
 
 <template>
   <nav class="bg-white h-24">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full">
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full px-6 md:px-0"
+    >
       <RouterLink to="/" class="flex items-center">
-        <img src="/assets/logo.svg" class="pl-6 h-9 md:h-11" alt="ASUA" />
+        <LogoComponent class="h-9 md:h-11" />
       </RouterLink>
       <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-cta">
         <ul
           class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
         >
           <li>
-            <a
-              href="#"
+            <RouterLink
+              to="/"
+              exact-active-class="text-tussock-400"
               class="text-lg block text-gray-700 md:hover:bg-transparent md:hover:text-tussock-400"
-              >Inicio</a
+              >Inicio</RouterLink
             >
           </li>
           <li>
-            <a
-              href="#"
+            <RouterLink
+              to="/nosotros"
+              exact-active-class="text-tussock-400"
               class="text-lg block text-gray-700 md:hover:bg-transparent md:hover:text-tussock-400"
-              >Nosotros</a
+              >Sobre Nosotros</RouterLink
             >
           </li>
         </ul>
@@ -53,4 +59,8 @@ const store = useUiStore();
   </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+nav {
+  box-shadow: 0px 20px 34px #0000000d;
+}
+</style>

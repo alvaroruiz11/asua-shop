@@ -1,32 +1,42 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import LogoComponentVue from '../shared/LogoComponent.vue';
+</script>
 <template>
   <footer class="bg-white">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-          <a href="https://flowbite.com/" class="flex items-center">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8 me-3"
-              alt="FlowBite Logo"
-            />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
-          </a>
+          <LogoComponentVue class="h-9 md:h-11" />
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-            <ul class="text-gray-500 font-medium">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Inicio</h2>
+            <!-- <ul class="text-gray-500 font-medium">
               <li class="mb-4">
                 <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
               </li>
               <li>
                 <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
               </li>
+            </ul> -->
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Nosotros</h2>
+            <ul class="text-gray-500 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Descripcion</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Mision</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Vision</a>
+              </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Productos</h2>
+            <!-- los productos o categorias -->
             <ul class="text-gray-500 font-medium">
               <li class="mb-4">
                 <a href="https://github.com/themesberg/flowbite" class="hover:underline">Github</a>
@@ -36,27 +46,19 @@
               </li>
             </ul>
           </div>
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-            <ul class="text-gray-500 font-medium">
-              <li class="mb-4">
-                <a href="#" class="hover:underline">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center"
-          >© 2023 <a href="https://flowbite.com/" class="hover:underline">Fleabite</a>. All Rights
-          Reserved.
+          >© 2023 Derechos reservados Dervisun.
         </span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
-          <a href="#" class="text-gray-500 hover:text-gray-900">
+          <a
+            href="https://www.facebook.com/asua.cosmetica.natural"
+            target="_blank"
+            class="text-gray-500 hover:text-gray-900"
+          >
             <svg
               class="w-4 h-4"
               aria-hidden="true"
@@ -72,67 +74,38 @@
             </svg>
             <span class="sr-only">Facebook page</span>
           </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+          <a
+            href="https://www.instagram.com/asua.cosmetica.natural/"
+            target="_blank"
+            class="text-gray-500 hover:text-gray-900 ms-5"
+          >
             <svg
-              class="w-4 h-4"
-              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              preserveAspectRatio="xMidYMid"
+              viewBox="0 0 256 256"
               fill="currentColor"
-              viewBox="0 0 21 16"
             >
               <path
-                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                d="M128 23.064c34.177 0 38.225.13 51.722.745 12.48.57 19.258 2.655 23.769 4.408 5.974 2.322 10.238 5.096 14.717 9.575 4.48 4.479 7.253 8.743 9.575 14.717 1.753 4.511 3.838 11.289 4.408 23.768.615 13.498.745 17.546.745 51.723 0 34.178-.13 38.226-.745 51.723-.57 12.48-2.655 19.257-4.408 23.768-2.322 5.974-5.096 10.239-9.575 14.718-4.479 4.479-8.743 7.253-14.717 9.574-4.511 1.753-11.289 3.839-23.769 4.408-13.495.616-17.543.746-51.722.746-34.18 0-38.228-.13-51.723-.746-12.48-.57-19.257-2.655-23.768-4.408-5.974-2.321-10.239-5.095-14.718-9.574-4.479-4.48-7.253-8.744-9.574-14.718-1.753-4.51-3.839-11.288-4.408-23.768-.616-13.497-.746-17.545-.746-51.723 0-34.177.13-38.225.746-51.722.57-12.48 2.655-19.258 4.408-23.769 2.321-5.974 5.095-10.238 9.574-14.717 4.48-4.48 8.744-7.253 14.718-9.575 4.51-1.753 11.288-3.838 23.768-4.408 13.497-.615 17.545-.745 51.723-.745M128 0C93.237 0 88.878.147 75.226.77c-13.625.622-22.93 2.786-31.071 5.95-8.418 3.271-15.556 7.648-22.672 14.764C14.367 28.6 9.991 35.738 6.72 44.155 3.555 52.297 1.392 61.602.77 75.226.147 88.878 0 93.237 0 128c0 34.763.147 39.122.77 52.774.622 13.625 2.785 22.93 5.95 31.071 3.27 8.417 7.647 15.556 14.763 22.672 7.116 7.116 14.254 11.492 22.672 14.763 8.142 3.165 17.446 5.328 31.07 5.95 13.653.623 18.012.77 52.775.77s39.122-.147 52.774-.77c13.624-.622 22.929-2.785 31.07-5.95 8.418-3.27 15.556-7.647 22.672-14.763 7.116-7.116 11.493-14.254 14.764-22.672 3.164-8.142 5.328-17.446 5.95-31.07.623-13.653.77-18.012.77-52.775s-.147-39.122-.77-52.774c-.622-13.624-2.786-22.929-5.95-31.07-3.271-8.418-7.648-15.556-14.764-22.672C227.4 14.368 220.262 9.99 211.845 6.72c-8.142-3.164-17.447-5.328-31.071-5.95C167.122.147 162.763 0 128 0Zm0 62.27C91.698 62.27 62.27 91.7 62.27 128c0 36.302 29.428 65.73 65.73 65.73 36.301 0 65.73-29.428 65.73-65.73 0-36.301-29.429-65.73-65.73-65.73Zm0 108.397c-23.564 0-42.667-19.103-42.667-42.667S104.436 85.333 128 85.333s42.667 19.103 42.667 42.667-19.103 42.667-42.667 42.667Zm83.686-110.994c0 8.484-6.876 15.36-15.36 15.36-8.483 0-15.36-6.876-15.36-15.36 0-8.483 6.877-15.36 15.36-15.36 8.484 0 15.36 6.877 15.36 15.36Z"
               />
             </svg>
-            <span class="sr-only">Discord community</span>
+            <span class="sr-only">Instagram</span>
           </a>
           <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
             <svg
               class="w-4 h-4"
-              aria-hidden="true"
+              viewBox="0 0 256 180"
               xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid"
               fill="currentColor"
-              viewBox="0 0 20 17"
             >
               <path
-                fill-rule="evenodd"
-                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                clip-rule="evenodd"
+                d="M250.346 28.075A32.18 32.18 0 0 0 227.69 5.418C207.824 0 127.87 0 127.87 0S47.912.164 28.046 5.582A32.18 32.18 0 0 0 5.39 28.24c-6.009 35.298-8.34 89.084.165 122.97a32.18 32.18 0 0 0 22.656 22.657c19.866 5.418 99.822 5.418 99.822 5.418s79.955 0 99.82-5.418a32.18 32.18 0 0 0 22.657-22.657c6.338-35.348 8.291-89.1-.164-123.134Z"
               />
+              <path fill="#FFF" d="m102.421 128.06 66.328-38.418-66.328-38.418z" />
             </svg>
-            <span class="sr-only">Twitter page</span>
-          </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
-            <svg
-              class="w-4 h-4"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <span class="sr-only">GitHub account</span>
-          </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
-            <svg
-              class="w-4 h-4"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <span class="sr-only">Dribble account</span>
+            <span class="sr-only">Youtube</span>
           </a>
         </div>
       </div>

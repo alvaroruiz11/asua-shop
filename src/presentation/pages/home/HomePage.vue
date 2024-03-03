@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ProductsSlide from '@/presentation/components/products/ProductsSlide.vue';
 import { initialState } from '../../seed/seed';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -36,11 +37,12 @@ import { initialState } from '../../seed/seed';
       <p class="text-base md:text-xl">
         Explora el origen de ASUA para descubrir su misión, visión y valores fundamentales...
       </p>
-      <button
+      <RouterLink
+        to="/nosotros"
         class="w-2/3 text-tussock-700 border border-tussock-700 rounded-sm text-lg font-medium p-2 hover:bg-tussock-600 hover:text-white hover:border-tussock-500 transition-all duration-300"
       >
         VER MAS
-      </button>
+      </RouterLink>
     </div>
     <div
       class="relative shadow-inner shadow-black/10 rounded-lg bg-red-100 overflow-hidden group h-[450px] md:h-[610px] mt-5 md:mt-0"
@@ -63,12 +65,3 @@ import { initialState } from '../../seed/seed';
     </section>
   </div>
 </template>
-
-<style scoped>
-h1 {
-  @apply text-tussock-800 font-bold md:text-4xl text-3xl;
-}
-p {
-  @apply text-tussock-800;
-}
-</style>
