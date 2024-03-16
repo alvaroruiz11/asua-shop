@@ -13,3 +13,7 @@ h1 {
 p {
   @apply text-tussock-800;
 }
+
+:root {
+  --shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
+}

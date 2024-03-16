@@ -3,7 +3,7 @@ import LogoComponentVue from '../shared/LogoComponent.vue';
 </script>
 <template>
   <footer class="bg-white">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="mx-auto w-full max-w-[1400px] p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <LogoComponentVue class="h-9 md:h-11" />
@@ -22,29 +22,9 @@ import LogoComponentVue from '../shared/LogoComponent.vue';
           </div>
           <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Nosotros</h2>
-            <ul class="text-gray-500 font-medium">
-              <li class="mb-4">
-                <a href="#" class="hover:underline">Descripcion</a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">Mision</a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">Vision</a>
-              </li>
-            </ul>
           </div>
           <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Productos</h2>
-            <!-- los productos o categorias -->
-            <ul class="text-gray-500 font-medium">
-              <li class="mb-4">
-                <a href="https://github.com/themesberg/flowbite" class="hover:underline">Github</a>
-              </li>
-              <li>
-                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

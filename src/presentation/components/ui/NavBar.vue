@@ -8,7 +8,7 @@ const store = useUiStore();
 <template>
   <nav class="bg-white h-24">
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full px-6 md:px-0"
+      class="max-w-[1400px] flex flex-wrap items-center justify-between mx-auto h-full px-6 md:px-0"
     >
       <RouterLink to="/" class="flex items-center">
         <LogoComponent class="h-9 md:h-11" />
