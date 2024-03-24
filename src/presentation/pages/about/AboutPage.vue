@@ -1,8 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CustomSection from '@/presentation/components/shared/CustomSection.vue';
+import CustomSeparator from '@/presentation/components/shared/CustomSeparator.vue';
+</script>
 <template>
-  <section class="max-w-[1400px] mx-auto p-6 md:p-12 lg:p-16">
+  <CustomSection>
     <h1 class="text-center">DESCRIPCIÓN ASUA</h1>
-    <div class="h-0.5 bg-tussock-400 mx-auto w-1/4 my-6" />
+    <CustomSeparator class="mx-auto bg-tussock-400" width="25%" />
     <p class="text-center">
       ASUA® se erige como la pionera en la producción de aceite de semilla de uva de altura en
       Bolivia. Aspiramos a consolidarnos a nivel nacional como la marca líder de este exclusivo
@@ -16,38 +19,37 @@
       producir una variedad de cosméticos naturales cómo ser aceite de almendra amazónico, aceite
       esencial de romero y jabones naturales saponificados✨
     </p>
-  </section>
-  <div class="max-w-[100vw] bg-gray-600 p-6 md:p-12 lg:p-16" style="background-color: #fdfcf8">
-    <section class="grid grid-cols-2 gap-10 max-w-[1400px] mx-auto">
-      <div
-        class="relative shadow-inner shadow-black/10 rounded-lg overflow-hidden group h-[450px] md:h-[560px] mt-5 md:mt-0"
-      >
-        <div
-          style="background-image: url('/assets/about-2.webp')"
-          class="bg-center bg-cover absolute bottom-0 left-0 top-0 w-full h-full duration-1000 ease-in-out group-hover:scale-110"
-        />
-      </div>
-      <div>
-        <h1 class="">Visión</h1>
-        <div class="h-0.5 bg-tussock-400 w-1/4 my-6" />
-        <p>
-          Ser reconocidos como líderes indiscutibles en la industria boliviana de productos
-          naturales. Buscamos trascender las expectativas de nuestros clientes al ser la marca
-          referente en la elección de productos de cuidado personal y bienestar en todo el país. Con
-          un enfoque sostenible y centrado en la innovación, visualizamos una expansión continua de
-          nuestra oferta de productos naturales, manteniendo estándares de calidad excepcionales.
-          Aspiramos a convertirnos en un referente regional en la producción de aceites vegetales
-          prensados en frio y aceites esenciales de usos cosméticos, contribuyendo así al bienestar
-          de nuestros consumidores y al desarrollo sostenible de la industria.
-        </p>
-      </div>
-    </section>
-  </div>
+  </CustomSection>
 
-  <section class="grid grid-cols-2 gap-10 max-w-[1400px] mx-auto p-6 md:p-12 lg:p-16">
+  <CustomSection class="grid grid-cols-2 gap-10" background="#fdfcf8">
+    <div
+      class="relative shadow-inner shadow-black/10 rounded-lg overflow-hidden group h-[450px] md:h-[560px] mt-5 md:mt-0"
+    >
+      <div
+        style="background-image: url('/assets/about-2.webp')"
+        class="bg-center bg-cover absolute bottom-0 left-0 top-0 w-full h-full duration-1000 ease-in-out group-hover:scale-110"
+      />
+    </div>
+    <div>
+      <h1 class="">Visión</h1>
+      <CustomSeparator width="25%" class="bg-tussock-400" />
+      <p>
+        Ser reconocidos como líderes indiscutibles en la industria boliviana de productos naturales.
+        Buscamos trascender las expectativas de nuestros clientes al ser la marca referente en la
+        elección de productos de cuidado personal y bienestar en todo el país. Con un enfoque
+        sostenible y centrado en la innovación, visualizamos una expansión continua de nuestra
+        oferta de productos naturales, manteniendo estándares de calidad excepcionales. Aspiramos a
+        convertirnos en un referente regional en la producción de aceites vegetales prensados en
+        frio y aceites esenciales de usos cosméticos, contribuyendo así al bienestar de nuestros
+        consumidores y al desarrollo sostenible de la industria.
+      </p>
+    </div>
+  </CustomSection>
+
+  <CustomSection class="grid grid-cols-2 gap-10">
     <div>
       <h1>Misión</h1>
-      <div class="h-0.5 bg-tussock-400 w-1/4 my-6" />
+      <CustomSeparator width="25%" class="bg-tussock-400" />
       <p>
         Liderar la industria de productos naturales en Bolivia, especializándonos en la producción
         de aceites vegetales prensados en frio y aceites esenciales de usos cosméticos de alta
@@ -66,7 +68,7 @@
         class="bg-center bg-cover absolute bottom-0 left-0 top-0 w-full h-full duration-1000 ease-in-out group-hover:scale-110"
       />
     </div>
-  </section>
+  </CustomSection>
 </template>
 
 <style scoped></style>

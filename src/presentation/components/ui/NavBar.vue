@@ -11,7 +11,7 @@ const store = useUiStore();
       class="max-w-[1400px] flex flex-wrap items-center justify-between mx-auto h-full px-6 md:px-0"
     >
       <RouterLink to="/" class="flex items-center">
-        <LogoComponent class="h-9 md:h-11" />
+        <LogoComponent class="h-9" />
       </RouterLink>
       <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-cta">
         <ul

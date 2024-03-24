@@ -3,7 +3,7 @@ import LogoComponentVue from '../shared/LogoComponent.vue';
 </script>
 <template>
   <footer class="bg-white">
-    <div class="mx-auto w-full max-w-[1400px] p-4 py-6 lg:py-8">
+    <div class="mx-auto w-full max-w-[1400px] py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <LogoComponentVue class="h-9 md:h-11" />
