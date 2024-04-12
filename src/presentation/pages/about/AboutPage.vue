@@ -21,7 +21,7 @@ import CustomSeparator from '@/presentation/components/shared/CustomSeparator.vu
     </p>
   </CustomSection>
 
-  <CustomSection class="grid grid-cols-2 gap-10" background="#fdfcf8">
+  <CustomSection class="grid grid-cols-1 md:grid-cols-2 gap-10" background="#fdfcf8">
     <div
       class="relative shadow-inner shadow-black/10 rounded-lg overflow-hidden group h-[450px] md:h-[560px] mt-5 md:mt-0"
     >
@@ -46,7 +46,7 @@ import CustomSeparator from '@/presentation/components/shared/CustomSeparator.vu
     </div>
   </CustomSection>
 
-  <CustomSection class="grid grid-cols-2 gap-10">
+  <CustomSection class="grid grid-cols-1 md:grid-cols-2 gap-10">
     <div>
       <h1>Misión</h1>
       <CustomSeparator width="25%" class="bg-tussock-400" />

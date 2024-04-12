@@ -9,7 +9,7 @@ defineProps<Props>();
     :class="`relative because 
     bg-white shadow-sm rounded-md 
     flex flex-col justify-center items-center 
-    p-8 gap-4 h-[90%] w-[90%]`"
+    p-8 gap-4 h-[90%] w-[90%] mx-auto`"
   >
     <slot name="image" />
 

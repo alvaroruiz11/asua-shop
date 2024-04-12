@@ -8,7 +8,7 @@ export interface SeedProduct {
   price: number;
   images: string[];
   net_weight?: number;
-  capacity?: number;
+  sizes?: string[];
   benefits?: string[];
   usage?: string[];
   description: string;
@@ -30,7 +30,7 @@ export const initialState: SeedDate = {
         'aceite-de-semilla-de-uva-de-altura-3.png'
       ],
       net_weight: 38,
-      capacity: 10,
+      sizes: ['10ml', '30ml'],
       benefits: [
         'Cuida tu piel del envejecimiento y de los radicales libres.',
         'Posee una alta cantidad de vitamina E, flavanoides y resveratrol.',
@@ -67,7 +67,7 @@ export const initialState: SeedDate = {
       description:
         'El aceite de almendra amazónica es un tesoro natural para el cuidado de la piel. Elaborado únicamente con nueces de castaña (Bertholetia Excelsa) de la selva amazónica boliviana mediante prensado en frío, este aceite ofrece una hidratación intensa, dejando la piel suave y nutrida. Sus beneficios en el uso cosmético incluyen propiedades antioxidantes que ayudan a combatir el envejecimiento prematuro, fortalecimiento del cabello, mejora de la elasticidad y una sensación general de bienestar. ¡Descubre la belleza de la naturaleza con el aceite de almendra amazónica!',
       images: ['aceite-de-almendra-amazonica-1.png'],
-      capacity: 60,
+      sizes: ['60ml'],
       benefits: [
         'El aceite de almendra amazónica es rico en ácidos grasos esenciales, como el ácido linoleico y el ácido oleico, que ayudan a mantener la piel hidratada y suave.',
         'Contiene compuestos con propiedades antiinflamatorias que pueden ayudar a calmar la piel irritada y reducir la inflamación.',
@@ -101,7 +101,7 @@ export const initialState: SeedDate = {
       description:
         'El aceite esencial de Romero (Rosmarinus officinalis) presenta un aroma fresco, herbáceo, dulce y ligeramente medicinal. Con propiedades energizantes, puede ser beneficioso para restaurar el estado de alerta mental, especialmente en situaciones de fatiga. Además, es un ingrediente popular en productos de cuidado de la piel y el cabello. Se aconseja diluir este aceite antes de su uso y su aplicación está recomendada exclusivamente para adultos. ¡Aprovecha sus beneficios con precaución y disfruta de sus propiedades revitalizantes!',
       images: ['aceite-esencial-de-romero-1.png'],
-      capacity: 10,
+      sizes: ['10ml'],
       benefits: [
         'Estimula la memoria y concentración. Ideal para épocas de estudio.',
         'Ingrediente popular en productos para el cuidado de la piel y el cabello.',

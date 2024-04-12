@@ -1,30 +1,24 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
 import LogoComponentVue from '../shared/LogoComponent.vue';
 </script>
 <template>
   <footer class="bg-white">
-    <div class="mx-auto w-full max-w-[1400px] py-6 lg:py-8">
+    <div class="mx-auto w-full max-w-[1400px] px-6 md:px-0 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <LogoComponentVue class="h-9 md:h-11" />
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3 text-center">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Inicio</h2>
-            <!-- <ul class="text-gray-500 font-medium">
-              <li class="mb-4">
-                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
-              </li>
-              <li>
-                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-              </li>
-            </ul> -->
+            <RouterLink to="/" class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+              >Inicio</RouterLink
+            >
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Nosotros</h2>
-          </div>
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Productos</h2>
+            <RouterLink to="/nosotros" class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+              >Nosotros</RouterLink
+            >
           </div>
         </div>
       </div>

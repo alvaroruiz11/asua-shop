@@ -24,11 +24,7 @@ import CustomSection from '@/presentation/components/shared/CustomSection.vue';
           <span>A</span>
         </h1>
       </section>
-      <img
-        src="https://kyliecosmetics.com/cdn/shop/files/020724_Lip-Butter_Site-Assets_Desktop_Kylie_REV-1.jpg?crop=center&height=1616&v=1707159051&width=2880"
-        alt="jenner"
-        class="w-full h-full object-cover"
-      />
+      <img src="/assets/home.webp" alt="jenner" class="w-full h-full object-cover" />
     </div>
   </div>
 
